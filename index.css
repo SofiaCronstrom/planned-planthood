@@ -1,0 +1,11 @@
+*{
+    --light-pink: #FCF6FC;
+    --brown: #9E6D52;
+    --green: #0A846E;
+    --red: #B93857;
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
