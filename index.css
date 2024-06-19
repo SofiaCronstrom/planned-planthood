@@ -1,11 +1,80 @@
-*{
-    --light-pink: #FCF6FC;
-    --brown: #9E6D52;
-    --green: #0A846E;
-    --red: #B93857;
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  --light-pink: #fcf6fc;
+  --brown: #9e6d52;
+  --green: #0a846e;
+  --red: #b93857;
 
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
+body {
+  background-color: var(--light-pink);
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+section.container {
+  max-width: 1000px;
+}
+.container img{
+    width: 100%;
+    height: 100%;
+}
+
+/* /////HEADER///// */
+
+/* Hero section */
+header .hero-section {
+ height: 540px;
+ display: flex;
+}
+
+.hero-logo, .hero-svgs{
+    width: 50%;
+}
+
+.hero-logo{
+    position: relative;
+}
+.hero-logo .hand-dirt {
+  object-fit: cover;
+}
+.logo-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+.logo-container .logo{
+    width: 40%;
+    height: 40%;
+}
+.hero-svgs{
+    display: flex;
+    flex-direction: column;
+}
+.hero-brown, .hero-green{
+    height: 50%;
+    padding: 1rem 0;
+}
+.hero-brown{
+    background-color: var(--brown);
+}
+.hero-green{
+    background-color: var(--green);
+}
+img.seedling, img.dig{
+    object-fit: contain;
+}
+
