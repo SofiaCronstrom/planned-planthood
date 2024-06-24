@@ -25,18 +25,16 @@ body {
 section.container {
     max-width: 1000px;
     background-color: #fff;
+    box-shadow: 0 4px 4px #00000040;
+    margin-bottom: 5rem;
 }
 
-/* .container img {
-    width: 100%;
-    height: 100%;
-} */
 
 /* /////HEADER///// */
 
 /* Hero section */
 header .hero-section {
-    height: 540px;
+    
     display: flex;
 }
 
@@ -80,8 +78,11 @@ header .hero-section {
 
 .hero-brown,
 .hero-green {
-    height: 50%;
+    height: 100%;
     padding: 1.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero-brown {
@@ -91,11 +92,11 @@ header .hero-section {
 .hero-green {
     background-color: var(--green);
 }
-
+/* 
 img.seedling,
 img.dig {
     object-fit: contain;
-}
+} */
 
 /* Navigation */
 nav {
@@ -152,7 +153,6 @@ main {
 
 /* Section info, seeding */
 section.info {
-    max-height: 615px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -168,7 +168,6 @@ section.info {
 }
 
 section.info-flex {
-    height: 377px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -339,7 +338,7 @@ article.contact{
     font-weight: 500;
     color: white;
     align-self: center;
-    padding: 8rem 0 2rem 0;
+    padding: 10rem 0 2rem 0;
 }
 
 
@@ -349,7 +348,7 @@ article.contact{
    width: 100%;
    align-items: flex-end;
    justify-content: space-between;
-   margin: 5rem 0 2rem 0;
+   margin: 8rem 0 2rem 0;
    padding: 0 2rem;
 }
    
@@ -359,7 +358,7 @@ article.contact{
     color: white;
     font-family: var(--maven-pro);
     font-size: 0.99rem;
-    padding-bottom: 0.3rem;
+    padding-bottom: 0.5rem;
 }
 
 
@@ -368,4 +367,77 @@ footer figure{
    align-items: center;
    justify-content: center;
     
+}
+section.back-top{
+    grid-column: 1 / span 2;
+    background-color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+.back-top a{
+    text-decoration: none;
+    font-family:var(--open-sans);
+    color: black;
+    font-size: 1.5rem;
+}
+
+
+@media (max-width: 600px){
+
+
+    .container{
+        width: 100%;
+    }
+    
+    header .hero-section{
+        flex-direction: column;
+    }
+    .hero-logo, .hero-svgs{
+      width: 100%;
+    }
+    .hero-svgs{
+      flex-direction: row;
+      
+    }
+    .hero-brown, .hero-green{
+        width: 100%;
+        height: inherit;
+    }
+    
+
+    nav{
+        display: none;
+    }
+    
+    main{
+        margin: 2.5rem 1rem 1rem 1rem;
+    }
+    .info h1{
+        font-size: 1.5rem;
+    }
+    .info-flex{
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+    .info-flex article{
+        width: 100%;
+        align-items: center;
+    }
+    .info-flex article p{
+        text-align: center;
+        font-size: 0.875rem;
+    }
+    .info-flex article .green-btn{
+        align-self: center;
+        font-size: 1.25rem;
+        padding: 0.8rem 1.2rem;
+    }
+    .info-flex figure{
+        height: 15rem;
+        width: 50%;
+    }
+    hr{
+        width: 60%;
+        margin: 2rem 0;
+    }
 }
