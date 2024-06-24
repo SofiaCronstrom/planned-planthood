@@ -34,7 +34,6 @@ section.container {
 
 /* Hero section */
 header .hero-section {
-    
     display: flex;
 }
 
@@ -44,32 +43,21 @@ header .hero-section {
 }
 
 .hero-logo {
-    position: relative;
-}
-
-.hero-logo .hand-dirt {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
-
-.logo-container {
+    background: url("assets/hand-dirt.jpg") no-repeat center;
+    background-size: cover;
+    background-color: #153801;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
 }
 
-.logo-container .logo {
-    width: 40%;
-    height: 40%;
+
+
+
+ .burger{
+    display: none;
 }
+
 
 .hero-svgs {
     display: flex;
@@ -92,6 +80,7 @@ header .hero-section {
 .hero-green {
     background-color: var(--green);
 }
+
 /* 
 img.seedling,
 img.dig {
@@ -150,6 +139,9 @@ main {
     border-radius: 9px;
 }
 
+.trash {
+    display: none;
+}
 
 /* Section info, seeding */
 section.info {
@@ -178,10 +170,10 @@ section.info-flex {
     justify-content: center;
     align-items: center;
     background-color: var(--green);
-    border-radius: 100%;
+    border-radius: 50%;
     padding: 1rem;
-    width: 40%;
-    height: 100%;
+    width: 23rem;
+    height: 23rem;
 }
 
 .info-flex figure img {
@@ -231,22 +223,26 @@ section.plan-plant {
     gap: 2rem;
     margin-bottom: 4rem;
 }
-.plan-plant h3{
+
+.plan-plant h3 {
     font-family: var(--lato);
     font-size: 2rem;
     font-weight: 400;
 }
+
 .plan-plant .grid-plant {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
 }
-.plan-plant .green-btn{
+
+.plan-plant .green-btn {
     grid-column: 2 / span 1;
     justify-self: center;
-    
+
 }
+
 .grid-plant article {
     max-height: 407px;
     box-shadow: 3px 4px 4px #00000040;
@@ -306,23 +302,24 @@ section.plan-plant {
 }
 
 /* Section info former */
-section.info.former{
- margin-bottom: 5rem;
+section.info.former {
+    margin-bottom: 5rem;
 }
 
-.info-flex.former article .green-btn{
+.info-flex.former article .green-btn {
     align-self: flex-start;
 }
 
 /* Section contact */
-footer{
+footer {
     background: url("assets/plant-hand.avif") no-repeat center;
     background-size: cover;
     background-color: #153801;
     display: grid;
     grid-template-columns: repeat(2, 50%);
 }
-article.contact{
+
+article.contact {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -331,8 +328,8 @@ article.contact{
 }
 
 
-.contact h1{
-    
+.contact h1 {
+
     font-family: var(--maven-pro);
     font-size: 4rem;
     font-weight: 500;
@@ -342,102 +339,237 @@ article.contact{
 }
 
 
-.contact-wrapper{
-   display: flex;
+.contact-wrapper {
+    display: flex;
 
-   width: 100%;
-   align-items: flex-end;
-   justify-content: space-between;
-   margin: 8rem 0 2rem 0;
-   padding: 0 2rem;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin: 8rem 0 2rem 0;
+    padding: 0 2rem;
 }
-   
 
-.phone-wrap span, .email-wrap span{
-   
+.phone-wrap,
+.email-wrap {
+    display: flex;
+    align-items: flex-end;
+    gap: 0.5rem;
+}
+
+.email-wrap {
+    justify-content: flex-end;
+}
+
+.phone-wrap span,
+.email-wrap span {
+
     color: white;
     font-family: var(--maven-pro);
     font-size: 0.99rem;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.1rem;
 }
 
 
-footer figure{
-   display: flex;
-   align-items: center;
-   justify-content: center;
-    
+footer figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
-section.back-top{
+
+section.back-top {
     grid-column: 1 / span 2;
     background-color: white;
     text-align: center;
     padding: 1.5rem 0;
 }
-.back-top a{
+
+.back-top a {
     text-decoration: none;
-    font-family:var(--open-sans);
+    font-family: var(--open-sans);
     color: black;
     font-size: 1.5rem;
 }
 
 
-@media (max-width: 600px){
+@media (max-width: 600px) {
 
-
-    .container{
-        width: 100%;
+    body {
+        display: block;
+        background-color: white;
     }
-    
-    header .hero-section{
+
+/* /////header///// */
+    header .hero-section {
         flex-direction: column;
     }
-    .hero-logo, .hero-svgs{
-      width: 100%;
+
+    .hero-logo {
+        height: 100%;
+        flex-direction: column;
     }
-    .hero-svgs{
-      flex-direction: row;
-      
+    .burger{
+        display: block;
+        align-self: flex-end;
+        margin: 0.5rem 0.5rem 0 0;
     }
-    .hero-brown, .hero-green{
+    .logo {
+        height: 50%;
+        width: 50%;
+        margin: 10rem 0;
+    }
+
+    .hero-logo,
+    .hero-svgs {
+        width: 100%;
+    }
+
+    .hero-svgs {
+        flex-direction: row;
+
+    }
+
+    .hero-brown,
+    .hero-green {
         width: 100%;
         height: inherit;
     }
-    
 
-    nav{
+
+    nav {
         display: none;
     }
-    
-    main{
+
+/* /////Main///// */
+    main {
         margin: 2.5rem 1rem 1rem 1rem;
     }
-    .info h1{
+
+/* //info section// */
+    .info h1 {
         font-size: 1.5rem;
     }
-    .info-flex{
+
+    .info-flex {
         flex-direction: column-reverse;
         gap: 2rem;
     }
-    .info-flex article{
+
+    .info-flex article {
         width: 100%;
         align-items: center;
     }
-    .info-flex article p{
+
+    .info-flex article h3 {
+        font-size: 1rem;
+    }
+
+    .info-flex article p {
         text-align: center;
         font-size: 0.875rem;
     }
-    .info-flex article .green-btn{
+
+    .info-flex article .green-btn,
+    .plan-plant .green-btn {
         align-self: center;
-        font-size: 1.25rem;
-        padding: 0.8rem 1.2rem;
+        font-size: 1rem;
+        padding: 0.6rem 1.2rem;
     }
-    .info-flex figure{
+
+    .info-flex.former article .green-btn {
+        align-self: center;
+    }
+
+    .info-flex figure {
         height: 15rem;
-        width: 50%;
+        width: 15rem;
     }
-    hr{
+
+    hr {
         width: 60%;
         margin: 2rem 0;
+    }
+
+/* //Plan plant section// */
+    .plan-plant h3 {
+        font-size: 1rem;
+    }
+
+    .plan-plant .grid-plant {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-plant article {
+        max-height: 220px;
+    }
+
+    .grid-plant article figure {
+        height: 75%;
+    }
+
+    figure .plant-container img {
+        height: 50%;
+    }
+
+    .grid-plant article .plant-text {
+        height: 25%;
+
+    }
+
+    .plant-text span:nth-of-type(1),
+    .plant-text span:nth-of-type(2) {
+        font-size: 0.625rem
+    }
+
+    .plant-text h4 {
+        font-size: 0.825rem;
+    }
+
+    .plant-text .red-btn {
+        display: none;
+    }
+
+    .trash {
+        display: block;
+        border: none;
+        background-color: white;
+        justify-self: end;
+    }
+
+/* ///FOOTER/// */
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer figure {
+        order: 1;
+        margin: 5rem;
+    }
+
+    footer .contact {
+        order: 2;
+    }
+
+    .contact .contact-wrapper {
+        padding: 0 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .contact-wrapper span {
+        font-size: 0.75rem;
+        padding-bottom: 0.1rem;
+    }
+
+    .contact-wrapper img {
+        width: 20%;
+    }
+
+    footer section.back-top {
+        order: 3;
+    }
+
+    .back-top a {
+        font-size: 0.75rem;
     }
 }
