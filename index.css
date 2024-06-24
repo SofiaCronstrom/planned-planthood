@@ -316,57 +316,56 @@ section.info.former{
 }
 
 /* Section contact */
-section.contact{
+footer{
     background: url("assets/plant-hand.avif") no-repeat center;
     background-size: cover;
     background-color: #153801;
-    display: flex;
-}
-.contact article{
-    width: 50%;
     display: grid;
-    grid-template-columns: repeat(5, auto);
-    grid-template-rows: 75% 25%;
-    justify-items: center;
+    grid-template-columns: repeat(2, 50%);
+}
+article.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
     background-color: #000000c9;
 }
-.contact article h1{
-    grid-row: 1 / 1;
-    grid-column: 2 / span 3;
+
+
+.contact h1{
+    
     font-family: var(--maven-pro);
     font-size: 4rem;
     font-weight: 500;
     color: white;
     align-self: center;
-}
-.contact article span{
-    align-self: end;
-    justify-self: end;
+    padding: 8rem 0 2rem 0;
 }
 
-.contact article span{
-    grid-row: 2 / 2;
+
+.contact-wrapper{
+   display: flex;
+
+   width: 100%;
+   align-items: flex-end;
+   justify-content: space-between;
+   margin: 5rem 0 2rem 0;
+   padding: 0 2rem;
+}
+   
+
+.phone-wrap span, .email-wrap span{
+   
     color: white;
     font-family: var(--maven-pro);
     font-size: 0.99rem;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.3rem;
 }
-span.phone-nr{
-    grid-column: 2;
-}
-span.email{
-    grid-column: 4;
-}
-.contact article img{
-    grid-row: 2 / 2;
-    justify-self: start;
-}
-img.envelope{
-    grid-column: 5;
-}
-.contact figure{
-    width: 50%;
-}
-.contact figure .logo{
-    width: 25%;
+
+
+footer figure{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    
 }
