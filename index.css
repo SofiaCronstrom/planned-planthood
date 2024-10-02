@@ -54,7 +54,7 @@ header .hero-section {
 
 
 
- .burger{
+.burger {
     display: none;
 }
 
@@ -399,7 +399,7 @@ section.back-top {
         background-color: white;
     }
 
-/* /////header///// */
+    /* /////header///// */
     header .hero-section {
         flex-direction: column;
     }
@@ -408,11 +408,13 @@ section.back-top {
         height: 100%;
         flex-direction: column;
     }
-    .burger{
+
+    .burger {
         display: block;
         align-self: flex-end;
         margin: 0.5rem 0.5rem 0 0;
     }
+
     .logo {
         height: 50%;
         width: 50%;
@@ -440,12 +442,12 @@ section.back-top {
         display: none;
     }
 
-/* /////Main///// */
+    /* /////Main///// */
     main {
         margin: 2.5rem 1rem 1rem 1rem;
     }
 
-/* //info section// */
+    /* //info section// */
     .info h1 {
         font-size: 1.5rem;
     }
@@ -490,7 +492,7 @@ section.back-top {
         margin: 2rem 0;
     }
 
-/* //Plan plant section// */
+    /* //Plan plant section// */
     .plan-plant h3 {
         font-size: 1rem;
     }
@@ -536,7 +538,7 @@ section.back-top {
         justify-self: end;
     }
 
-/* ///FOOTER/// */
+    /* ///FOOTER/// */
     footer {
         display: flex;
         flex-direction: column;
